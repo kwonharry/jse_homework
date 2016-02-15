@@ -19,6 +19,12 @@ public static void main(String[] args) {
 	int hour=min/60;
 	int a=sec%60;
 	int b=min%60;
+	/*int sec=scanner.nextInt();
+	 * int min=sec/60;
+	 * sec %=60;
+	 * int hour=min/60;
+	 * min %=60;
+	 * */
 	if (sec<60) {
 		System.out.println("입력한"+sec+"초는"+sec+"초입니다.");
 	} else {
