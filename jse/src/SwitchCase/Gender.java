@@ -9,13 +9,13 @@ public static void main(String[] args) {
 	System.out.println("이름?");
 	String name= scanner.next();
 	System.out.println("주민번호?");
-	String ssn=""; 
+	String ssn=scanner.next();
 	char index=ssn.charAt(7);
 	System.out.println(index);
 	
 	String gender="";
 	switch (index) {
-	case 1:case 3:
+	case '1':case 3:
 		gender="남자";
 		break;
 	case 2:case 4:
