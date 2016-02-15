@@ -13,6 +13,7 @@ public class MonthEndDay {
 		System.out.println("몇 월달입니까?");
 		int month=scanner.nextInt();
 		
+		
 		int end=30;
 		switch (month) {
 		case 1:

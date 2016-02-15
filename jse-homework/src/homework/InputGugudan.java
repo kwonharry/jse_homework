@@ -21,6 +21,7 @@ public class InputGugudan {
 		if(num<=0){
 		System.out.println("잘못입력하셨습니다.");
 		}
+		
 		else{
 	
 		for(i=1;i<10;i++){

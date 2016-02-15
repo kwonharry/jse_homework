@@ -15,6 +15,7 @@ public class InputSum {
 	big= (num1>=num2)? num1:num2;
 	small=(num1<num2)? num1:num2;
 	
+	
 	/*if(num1>num2){
 		big=num1;
 		small=num2;
