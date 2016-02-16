@@ -17,7 +17,11 @@ public class AccountController {
 			
 				System.out.println(account.open(scanner.next(), scanner.nextInt()));
 				break;
-			case 2:	break;
+				
+			case 2:	
+				System.out.println("입금하실 금액을 넣어주세요.");
+				
+				break;
 			case 3:	break;
 			case 4:	break;
 			case 5:	return;

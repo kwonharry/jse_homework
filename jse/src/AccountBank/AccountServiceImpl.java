@@ -19,11 +19,8 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public String deposit(int money) {
 		// 2.입금
-	
-		account.setMoney(money);
 		
-	
-		
+		account.setMoney(account.getMoney()+money);
 		return account.toString();
 		
 		
@@ -32,13 +29,14 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public String withdraw(int money) {
 		// 3.출금
-		return null;
+		account.setMoney(account.getMoney()-money);
+		return account.toString();
 	}
 
 	@Override
 	public String search() {
 		// 4.잔액조회
-		return null;
+		return account.toString();
 	}
 
 }
