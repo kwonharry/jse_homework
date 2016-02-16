@@ -16,9 +16,7 @@ public class MonthEndDay {
 		
 		int end=30;
 		switch (month) {
-		case 1:
-		case 3:
-		case 5:
+		case 1: case 3: case 5:
 		case 7:
 		case 8:
 		case 10:
