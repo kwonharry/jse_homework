@@ -29,7 +29,14 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public String withdraw(int money) {
 		// 3.출금
-		account.setMoney(account.getMoney()-money);
+	
+		if(account.getMoney()-money<0){
+		System.out.println("잔액 부족. 다시 입력하세요.");
+		
+		}
+		else{
+			account.setMoney(account.getMoney()-money);
+		}
 		return account.toString();
 	}
 

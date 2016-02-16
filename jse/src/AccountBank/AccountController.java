@@ -20,10 +20,20 @@ public class AccountController {
 				
 			case 2:	
 				System.out.println("입금하실 금액을 넣어주세요.");
+				System.out.println(account.deposit(scanner.nextInt()));
+				break;
+			case 3:	
+				System.out.println("출금하실 금액을 넣어주세요.");
+				System.out.println(account.withdraw(scanner.nextInt()));
+				break;
+			
+			case 4:	
+				System.out.println(account.search());
 				
 				break;
-			case 3:	break;
-			case 4:	break;
+			
+			
+			
 			case 5:	return;
 
 			default:System.out.println("1번부터 5번 사이에서 선택가능합니다.");
